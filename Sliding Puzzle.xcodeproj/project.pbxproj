@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9320B84F18A8AC0A003F9A2F /* UIImage+GIF.h in Resources */ = {isa = PBXBuildFile; fileRef = 9320B84E18A8AC0A003F9A2F /* UIImage+GIF.h */; };
+		9320B85118A8AC41003F9A2F /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 9320B85018A8AC41003F9A2F /* UIImage+GIF.m */; };
+		932E324F18A9012700A25CCD /* optical2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 932E324E18A9012700A25CCD /* optical2.gif */; };
+		932F5A7218A7A4B200968B24 /* ADCSlidingPuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F5A7118A7A4B200968B24 /* ADCSlidingPuzzleView.m */; };
+		932F5A7718A7A7E600968B24 /* ADCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F5A7518A7A7E600968B24 /* ADCViewController.m */; };
+		932F5A7818A7A7E600968B24 /* ADCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932F5A7618A7A7E600968B24 /* ADCViewController.xib */; };
+		932F5A7B18A7BD6F00968B24 /* vid.mov in Resources */ = {isa = PBXBuildFile; fileRef = 932F5A7A18A7BD6F00968B24 /* vid.mov */; };
+		932F5A7D18A7BF8F00968B24 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 932F5A7C18A7BF8F00968B24 /* cat.jpg */; };
 		9397544218A35319000C3970 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9397544118A35319000C3970 /* Foundation.framework */; };
 		9397544418A35319000C3970 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9397544318A35319000C3970 /* CoreGraphics.framework */; };
 		9397544618A35319000C3970 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9397544518A35319000C3970 /* UIKit.framework */; };
@@ -19,6 +27,7 @@
 		9397545D18A35319000C3970 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9397544518A35319000C3970 /* UIKit.framework */; };
 		9397546518A35319000C3970 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9397546318A35319000C3970 /* InfoPlist.strings */; };
 		9397546718A35319000C3970 /* Sliding_PuzzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9397546618A35319000C3970 /* Sliding_PuzzleTests.m */; };
+		9397547218A35327000C3970 /* ADCSlidingPuzzleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9397547118A35327000C3970 /* ADCSlidingPuzzleModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9320B84E18A8AC0A003F9A2F /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		9320B85018A8AC41003F9A2F /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		932E324E18A9012700A25CCD /* optical2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = optical2.gif; sourceTree = "<group>"; };
+		932F5A7018A7A4B200968B24 /* ADCSlidingPuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCSlidingPuzzleView.h; sourceTree = "<group>"; };
+		932F5A7118A7A4B200968B24 /* ADCSlidingPuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCSlidingPuzzleView.m; sourceTree = "<group>"; };
+		932F5A7418A7A7E600968B24 /* ADCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCViewController.h; sourceTree = "<group>"; };
+		932F5A7518A7A7E600968B24 /* ADCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCViewController.m; sourceTree = "<group>"; };
+		932F5A7618A7A7E600968B24 /* ADCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADCViewController.xib; sourceTree = "<group>"; };
+		932F5A7A18A7BD6F00968B24 /* vid.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = vid.mov; sourceTree = "<group>"; };
+		932F5A7C18A7BF8F00968B24 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		9397543E18A35319000C3970 /* Sliding Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sliding Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9397544118A35319000C3970 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9397544318A35319000C3970 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +67,10 @@
 		9397546218A35319000C3970 /* Sliding PuzzleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sliding PuzzleTests-Info.plist"; sourceTree = "<group>"; };
 		9397546418A35319000C3970 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9397546618A35319000C3970 /* Sliding_PuzzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sliding_PuzzleTests.m; sourceTree = "<group>"; };
+		9397547018A35327000C3970 /* ADCSlidingPuzzleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCSlidingPuzzleModel.h; sourceTree = "<group>"; };
+		9397547118A35327000C3970 /* ADCSlidingPuzzleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCSlidingPuzzleModel.m; sourceTree = "<group>"; };
+		9397547318A7A381000C3970 /* ADCSlidingPuzzleViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADCSlidingPuzzleViewDelegate.h; sourceTree = "<group>"; };
+		9397547418A7A3A0000C3970 /* ADCSlidingPuzzleIncludes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADCSlidingPuzzleIncludes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +97,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		932F5A7318A7A7D500968B24 /* ADCSlidingPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				9397547418A7A3A0000C3970 /* ADCSlidingPuzzleIncludes.h */,
+				9397547018A35327000C3970 /* ADCSlidingPuzzleModel.h */,
+				9397547118A35327000C3970 /* ADCSlidingPuzzleModel.m */,
+				9397547318A7A381000C3970 /* ADCSlidingPuzzleViewDelegate.h */,
+				932F5A7018A7A4B200968B24 /* ADCSlidingPuzzleView.h */,
+				932F5A7118A7A4B200968B24 /* ADCSlidingPuzzleView.m */,
+			);
+			name = ADCSlidingPuzzle;
+			sourceTree = "<group>";
+		};
 		9397543518A35319000C3970 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +145,12 @@
 			children = (
 				9397545018A35319000C3970 /* ADCAppDelegate.h */,
 				9397545118A35319000C3970 /* ADCAppDelegate.m */,
+				932F5A7418A7A7E600968B24 /* ADCViewController.h */,
+				932F5A7518A7A7E600968B24 /* ADCViewController.m */,
+				9320B84E18A8AC0A003F9A2F /* UIImage+GIF.h */,
+				9320B85018A8AC41003F9A2F /* UIImage+GIF.m */,
+				932F5A7618A7A7E600968B24 /* ADCViewController.xib */,
+				932F5A7318A7A7D500968B24 /* ADCSlidingPuzzle */,
 				9397545318A35319000C3970 /* Images.xcassets */,
 				9397544818A35319000C3970 /* Supporting Files */,
 			);
@@ -118,6 +160,9 @@
 		9397544818A35319000C3970 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				932E324E18A9012700A25CCD /* optical2.gif */,
+				932F5A7C18A7BF8F00968B24 /* cat.jpg */,
+				932F5A7A18A7BD6F00968B24 /* vid.mov */,
 				9397544918A35319000C3970 /* Sliding Puzzle-Info.plist */,
 				9397544A18A35319000C3970 /* InfoPlist.strings */,
 				9397544D18A35319000C3970 /* main.m */,
@@ -222,6 +267,11 @@
 			files = (
 				9397544C18A35319000C3970 /* InfoPlist.strings in Resources */,
 				9397545418A35319000C3970 /* Images.xcassets in Resources */,
+				932F5A7B18A7BD6F00968B24 /* vid.mov in Resources */,
+				932F5A7818A7A7E600968B24 /* ADCViewController.xib in Resources */,
+				932E324F18A9012700A25CCD /* optical2.gif in Resources */,
+				9320B84F18A8AC0A003F9A2F /* UIImage+GIF.h in Resources */,
+				932F5A7D18A7BF8F00968B24 /* cat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9320B85118A8AC41003F9A2F /* UIImage+GIF.m in Sources */,
+				932F5A7718A7A7E600968B24 /* ADCViewController.m in Sources */,
+				932F5A7218A7A4B200968B24 /* ADCSlidingPuzzleView.m in Sources */,
+				9397547218A35327000C3970 /* ADCSlidingPuzzleModel.m in Sources */,
 				9397544E18A35319000C3970 /* main.m in Sources */,
 				9397545218A35319000C3970 /* ADCAppDelegate.m in Sources */,
 			);
@@ -444,6 +498,7 @@
 				9397546C18A35319000C3970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9397546D18A35319000C3970 /* Build configuration list for PBXNativeTarget "Sliding PuzzleTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +507,7 @@
 				9397546F18A35319000C3970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

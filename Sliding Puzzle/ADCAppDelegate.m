@@ -7,6 +7,8 @@
 //
 
 #import "ADCAppDelegate.h"
+#import "ADCSlidingPuzzleModel.h"
+#import "ADCViewController.h"
 
 @implementation ADCAppDelegate
 
@@ -14,8 +16,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    ADCViewController* viewController = [[ADCViewController alloc] initWithNibName:@"ADCViewController" bundle:nil];
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
