@@ -8,6 +8,22 @@
 
 #import "ADCSlidingPuzzleModel.h"
 
+#define SWAP(type,x, y) \
+{ \
+type temp = x; \
+x = y;\
+y = temp;\
+}
+
+@interface ADCSlidingPuzzleTileModel : NSObject
+
+@property (nonatomic, readonly, getter = isEmpty) BOOL empty;
+@property (nonatomic, readonly) NSUInteger ID;
+
+- (instancetype)initWithID:(NSUInteger)ID;
+
+@end
+
 @interface ADCSlidingPuzzleTileModel ()
 
 @property (nonatomic, readwrite, assign) BOOL empty;
@@ -187,10 +203,14 @@
     
     NSUInteger indexOfBlockToSwitch = [self indexOfTileAtCoordinate:coordinateOfFutureEmptyTile];
     
-    id emptyTile = self.tiles[indexOfEmptyBlock];
-    self.tiles[indexOfEmptyBlock] = self.tiles[indexOfBlockToSwitch];
-    self.tiles[indexOfBlockToSwitch] = emptyTile;
+    SWAP(id, self.tiles[indexOfEmptyBlock], self.tiles[indexOfBlockToSwitch]);
     
+    if([self isPuzzleSolved] && self.solvedBlock){
+        self.solvedBlock(self);
+    }
+}
+
+- (BOOL)isPuzzleSolved{
     __block BOOL solved = YES;
     [self.tiles enumerateObjectsUsingBlock:^(ADCSlidingPuzzleTileModel* tile, NSUInteger idx, BOOL *stop) {
         if(tile.ID != idx){
@@ -198,9 +218,7 @@
             *stop = YES;
         }
     }];
-    if(solved && self.solvedBlock){
-        self.solvedBlock(self);
-    }
+    return solved;
 }
 
 - (void)shuffleRepeatedly:(NSUInteger)numberOfTimesToShuffle{

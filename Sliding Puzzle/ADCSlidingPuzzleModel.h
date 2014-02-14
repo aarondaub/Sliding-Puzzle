@@ -9,15 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ADCSlidingPuzzleIncludes.h"
 
-@interface ADCSlidingPuzzleTileModel : NSObject
-
-@property (nonatomic, readonly, getter = isEmpty) BOOL empty;
-@property (nonatomic, readonly) NSUInteger ID;
-
-- (instancetype)initWithID:(NSUInteger)ID;
-
-@end
-
 @class ADCSlidingPuzzleModel;
 typedef void(^ADCSlidingPuzzelModelSolved)(ADCSlidingPuzzleModel* puzzleModel);
 
